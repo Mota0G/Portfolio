@@ -204,6 +204,7 @@ nav ul li a:hover {
   color: #0f172a;
   margin-bottom: 15px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .about-sub {
