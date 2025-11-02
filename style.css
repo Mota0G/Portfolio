@@ -1,47 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #ffffff;
-    background: #1b2631;
-    line-height: 1.4;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  background: #1b2631;
+  line-height: 1.4;
 }
 
 /* Navbar */
 header {
-    width: 100%;
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
 nav ul li a {
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    font-weight: 500;
-    color: #ffffff;
-    transition: color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #3498db;
+  color: #3498db;
 }
 
 
@@ -122,13 +123,27 @@ nav ul li a:hover {
 
 /* Animations */
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Button */
@@ -352,6 +367,7 @@ nav ul li a:hover {
 
 /*(768px)*/
 @media (max-width: 768px) {
+
   /* Header and Navbar */
   header {
     flex-direction: column;
@@ -368,6 +384,14 @@ nav ul li a:hover {
   /* Hero */
   .hero {
     height: 80vh;
+
+    .hero-content h1 {
+      font-size: 2.4rem;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+    }
   }
 
   .btn {
@@ -425,11 +449,17 @@ nav ul li a:hover {
 
 /*(480px)*/
 @media (max-width: 480px) {
+
+  /* Hero */
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content h2 { font-size: 1.6rem; }
+
   .btn {
     padding: 14px 40px;
     font-size: 0.85rem;
   }
 
+  /* About */
   .about-alt-image img {
     width: 180px;
   }
@@ -437,15 +467,11 @@ nav ul li a:hover {
   .about-alt-content h2 {
     font-size: 24px;
   }
-
+  /* Projects */
   .projects-header h2 {
     font-size: 1.2rem;
   }
-
   .project-item h3 {
     font-size: 0.9rem;
   }
 }
-
-
-
